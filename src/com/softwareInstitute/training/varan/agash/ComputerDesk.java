@@ -5,8 +5,8 @@ public class ComputerDesk extends LibraryItems {
     private String computerDeskNumber;
 
     //Constructors
-    public ComputerDesk(String deskNumber, String libraryItemType){
-        super(libraryItemType);
+    public ComputerDesk(String deskNumber, String libraryItemName){
+        super(libraryItemName);
         this.computerDeskNumber = computerDeskNumber;
     }
 
@@ -30,5 +30,9 @@ public class ComputerDesk extends LibraryItems {
 
     public String logOut(){
         return "logging out of library computer";
+    }
+
+    public String getLibraryItemName() {
+        return "EmptyDesk" + computerDeskNumber;
     }
 }

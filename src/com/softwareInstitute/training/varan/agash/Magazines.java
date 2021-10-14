@@ -5,7 +5,7 @@ public class Magazines extends AnalogueItems {
     private String title;
 
     //Constructors
-    public Magazines(String title, String libraryItemType){
+    public Magazines(String title, String libraryItemName){
         super("Magazine");
         this.title = title;
     }
@@ -22,6 +22,10 @@ public class Magazines extends AnalogueItems {
 
     public String reserve(){
         return "reserved magazine";
+    }
+
+    public String getLibraryItemName() {
+        return title;
     }
 
     public String flickThrough(){
@@ -43,4 +47,5 @@ public class Magazines extends AnalogueItems {
     public void setTitle(String title) {
         this.title = title;
     }
+
 }

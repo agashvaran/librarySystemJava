@@ -7,8 +7,8 @@ public class AudioBooks extends DigitalItems{
 
 
     //Constructors
-    public AudioBooks(String title, String author, String libraryItemType){
-        super(libraryItemType);
+    public AudioBooks(String title, String author, String libraryItemName){
+        super(libraryItemName);
         this.title = title;
         this.author = author;
     }
@@ -52,4 +52,10 @@ public class AudioBooks extends DigitalItems{
     public void setAuthor(String author) {
         this.author = author;
     }
+
+    public String getLibraryItemName() {
+        return title;
+    }
+
+
 }

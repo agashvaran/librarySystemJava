@@ -6,7 +6,7 @@ public class Books extends AnalogueItems{
     private String author;
 
     //Constructors
-    public Books(String title, String author,String libraryItemType){
+    public Books(String title, String author,String libraryItemName){
         super("Book");
         this.title = title;
         this.author = author;
@@ -41,6 +41,10 @@ public class Books extends AnalogueItems{
 
     public String reserve(){
         return "this book has been reserved";
+    }
+
+    public String getLibraryItemName() {
+        return title;
     }
 
     public String flickThrough(){

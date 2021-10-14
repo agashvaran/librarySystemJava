@@ -6,8 +6,8 @@ public abstract class DigitalItems extends LibraryItems implements Borrow {
 
 
     //Constructors
-    public DigitalItems(String libraryItemType){
-        super(libraryItemType);
+    public DigitalItems(String libraryItemName){
+        super(libraryItemName);
     }
 
     //Methods

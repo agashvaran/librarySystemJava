@@ -6,8 +6,8 @@ public abstract class AnalogueItems extends LibraryItems implements Borrow, Read
 
     //Constructors
 
-    public AnalogueItems(String libraryItemType){
-        super(libraryItemType);
+    public AnalogueItems(String libraryItemName){
+        super(libraryItemName);
 
     }
 

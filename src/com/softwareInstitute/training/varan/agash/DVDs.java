@@ -6,8 +6,8 @@ public class DVDs extends DigitalItems {
 
 
     //Constructors
-    public DVDs(String Title, String libraryType){
-        super(libraryType);
+    public DVDs(String Title, String libraryItemName){
+        super(libraryItemName);
         this.title = title;
     }
 
@@ -31,5 +31,9 @@ public class DVDs extends DigitalItems {
 
     public String borrow(){
         return "DVD is loaned to you for a week.";
+    }
+
+    public String getLibraryItemName() {
+        return title;
     }
 }

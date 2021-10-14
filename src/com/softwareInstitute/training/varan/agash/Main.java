@@ -9,6 +9,10 @@ public class Main {
 
         Books book1 = new Books("Wolves", "conn");
 
+        library.add(book1);
+
+        System.out.println(library.get(0));
+
 
 
         System.out.println(book1.readBlurb());
@@ -19,7 +23,6 @@ public class Main {
         System.out.println(book1.read());
         System.out.println(book1.getTitle());
         System.out.println(book1.getAuthor());
-        System.out.println(book1.getLibraryItemType());
 //
 //        Magazines mag1 = new Magazines("Wired Uk 2021");
 //

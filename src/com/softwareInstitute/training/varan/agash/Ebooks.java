@@ -7,8 +7,8 @@ public class Ebooks extends DigitalItems implements Read {
 
 
     //Constructors
-    public Ebooks(String title, String author, String libraryItemType){
-        super(libraryItemType);
+    public Ebooks(String title, String author, String libraryItemName){
+        super(libraryItemName);
         this.title = title;
         this.author = author;
     }
@@ -38,5 +38,9 @@ public class Ebooks extends DigitalItems implements Read {
 
     public String read(){
         return "preparing book for reading...";
+    }
+
+    public String getLibraryItemName() {
+        return title;
     }
 }
