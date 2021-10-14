@@ -4,12 +4,22 @@ public class Books extends AnalogueItems{
     //Attributes
     private String title;
     private String author;
+    private String type;
 
     //Constructors
-    public Books(String title, String author,String libraryItemName){
+    public Books(String title, String author, String type,String libraryItemName){
+        super(libraryItemName);
+        this.title = title;
+        this.author = author;
+        this.type = type;
+    }
+
+    public Books(String title, String author, String type){
         super("Book");
         this.title = title;
         this.author = author;
+        this.type = type;
+
     }
 
     public Books(String title, String author){
@@ -43,10 +53,6 @@ public class Books extends AnalogueItems{
         return "this book has been reserved";
     }
 
-    public String getLibraryItemName() {
-        return title;
-    }
-
     public String flickThrough(){
         return "flicking through book...done.";
     }
@@ -55,8 +61,13 @@ public class Books extends AnalogueItems{
         return "book is loaned to you for a week";
     }
 
+
     public String read(){
         return "reading book...start.";
+    }
+
+    public String getLibraryItemName() {
+        return title;
     }
 
     public String getTitle() {
@@ -73,5 +84,13 @@ public class Books extends AnalogueItems{
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 }
