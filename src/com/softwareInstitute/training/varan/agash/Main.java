@@ -8,7 +8,7 @@ public class Main {
 
         ArrayList<LibraryItems> libraryStock = new ArrayList<>();
 
-        Books book1 = new Books("Wolves Of The Plains", "Conn Iggulden");
+        Books book1 = new Books("Wolves Of The Plains", "Conn Iggulden", "Fiction");
         Magazines mag1 = new Magazines("Wired October 2021");
 
         AudioBooks audio1 = new AudioBooks("Can't hurt me", "David Goggins");
@@ -30,8 +30,10 @@ public class Main {
 
         System.out.println(myLibrary.getPostCode());
         for( int i = 0; i < libraryStock.size(); i++){
-            System.out.println(myLibrary.getItems().get(i).getLibraryItemName());
+            String items = myLibrary.getItems().get(i).getLibraryItemName();
+            System.out.println(items);
         }
+
 
 
 //        System.out.println(book1.readBlurb());
