@@ -6,12 +6,12 @@ public class DVDs extends DigitalItems {
 
 
     //Constructors
-    public DVDs(String Title, String libraryItemName){
+    public DVDs(String title, String libraryItemName){
         super(libraryItemName);
         this.title = title;
     }
 
-    public DVDs(String Title){
+    public DVDs(String title){
         super("DVDs");
         this.title = title;
     }

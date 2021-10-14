@@ -29,6 +29,6 @@ public class EmptyDesk extends LibraryItems {
     }
 
     public String getLibraryItemName() {
-        return "Computer Desk" + deskNumber;
+        return "Desk " + deskNumber;
     }
 }
