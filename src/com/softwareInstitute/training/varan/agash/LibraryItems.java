@@ -10,8 +10,14 @@ public abstract class LibraryItems{
     //Constructors
 
     public LibraryItems(String libraryItemName){
+
         this.libraryItemName = libraryItemName;
     }
+
+//    public LibraryItems(String libraryItemName, ArrayList<LibraryItems> allItems){
+//        super(allItems);
+//        this.libraryItemName = libraryItemName;
+//    }
 
     //Methods
     public abstract String use();

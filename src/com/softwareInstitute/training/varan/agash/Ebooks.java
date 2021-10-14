@@ -19,6 +19,12 @@ public class Ebooks extends DigitalItems implements Read {
         this.author = author;
     }
 
+    public Ebooks(String title){
+        super("EBook");
+        this.title = title;
+        this.author = "unknown";
+    }
+
     //Methods
     public String use(){
         return "override this with read for ebook";

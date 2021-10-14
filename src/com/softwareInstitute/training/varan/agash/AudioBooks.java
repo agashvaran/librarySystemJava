@@ -19,6 +19,12 @@ public class AudioBooks extends DigitalItems{
         this.author = author;
     }
 
+    public AudioBooks(String title){
+        super("AudioBook");
+        this.title = title;
+        this.author = "Unknown";
+    }
+
 
     //Methods
     public String use(){
