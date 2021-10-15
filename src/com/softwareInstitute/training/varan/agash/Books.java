@@ -41,6 +41,16 @@ public class Books extends AnalogueItems{
     }
 
     //Methods
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", type='" + type + '\'' +
+                '}';
+    }
+
     public String readBlurb(){
         return "blurb blurb nice blurb";
     }
