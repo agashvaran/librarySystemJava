@@ -16,6 +16,16 @@ public class Library {
     }
 
     //Methods
+
+
+    @Override
+    public String toString() {
+        return "Library{" +
+                "libraryStock=" + libraryStock +
+                ", postCode='" + postCode + '\'' +
+                '}';
+    }
+
     public String getPostCode(){
         return postCode;
     }

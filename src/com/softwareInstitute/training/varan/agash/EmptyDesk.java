@@ -16,6 +16,15 @@ public class EmptyDesk extends LibraryItems {
     }
 
     //Methods
+
+
+    @Override
+    public String toString() {
+        return "EmptyDesk{" +
+                "deskNumber='" + deskNumber + '\'' +
+                '}';
+    }
+
     public String use(){
         return "setting up my stuff on the emptydesk...";
     }

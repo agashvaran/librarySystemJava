@@ -26,6 +26,16 @@ public class Ebooks extends DigitalItems implements Read {
     }
 
     //Methods
+
+
+    @Override
+    public String toString() {
+        return "Ebooks{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                '}';
+    }
+
     public String use(){
         return "override this with read for ebook";
     }

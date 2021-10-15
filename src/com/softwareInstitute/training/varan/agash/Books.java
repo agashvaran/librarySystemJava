@@ -77,7 +77,7 @@ public class Books extends AnalogueItems{
     }
 
     public String getLibraryItemName() {
-        return title;
+        return "Book: " + title;
     }
 
     public String getTitle() {

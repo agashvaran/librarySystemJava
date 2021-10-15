@@ -27,6 +27,16 @@ public class AudioBooks extends DigitalItems{
 
 
     //Methods
+
+
+    @Override
+    public String toString() {
+        return "AudioBooks{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                '}';
+    }
+
     public String use(){
         return "override with play for audiobook";
     }

@@ -16,6 +16,15 @@ public class Magazines extends AnalogueItems {
     }
 
     //Methods
+
+
+    @Override
+    public String toString() {
+        return "Magazines{" +
+                "title='" + title + '\'' +
+                '}';
+    }
+
     public String use(){
         return "override to read magazine";
     }

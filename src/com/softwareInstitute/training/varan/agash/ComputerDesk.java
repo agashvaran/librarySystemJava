@@ -16,6 +16,15 @@ public class ComputerDesk extends LibraryItems {
     }
 
     //Methods
+
+
+    @Override
+    public String toString() {
+        return "ComputerDesk{" +
+                "computerDeskNumber='" + computerDeskNumber + '\'' +
+                '}';
+    }
+
     public String use(){
         return "sitting down in front of the computer desk";
     }

@@ -26,26 +26,14 @@ public class Main {
         libraryStock.add(emptyDesk1);
         libraryStock.add(computerDesk1);
 
-//        System.out.println(book1);
-
         Library myLibrary = new Library("LE11 3UG", libraryStock);
 
         System.out.println(myLibrary.getPostCode());
         for( int i = 0; i < libraryStock.size(); i++){
             LibraryItems items = myLibrary.getItems().get(i);
-//            String items = myLibrary.getItems().get(i).getLibraryItemName();
             System.out.println(items);
         }
 
 
-
-//        System.out.println(book1.readBlurb());
-//        System.out.println(book1.use());
-//        System.out.println(book1.reserve());
-//        System.out.println(book1.flickThrough());
-//        System.out.println(book1.borrow());
-//        System.out.println(book1.read());
-//        System.out.println(book1.getTitle());
-//        System.out.println(book1.getAuthor());
     }
 }

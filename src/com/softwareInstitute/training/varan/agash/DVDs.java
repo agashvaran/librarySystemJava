@@ -17,6 +17,15 @@ public class DVDs extends DigitalItems {
     }
 
     //Methods
+
+
+    @Override
+    public String toString() {
+        return "DVDs{" +
+                "title='" + title + '\'' +
+                '}';
+    }
+
     public String use(){
         return "override with play for DVD";
     }
